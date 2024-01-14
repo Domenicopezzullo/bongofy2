@@ -3,10 +3,12 @@ from nextcord.ext import commands
 from PIL import Image
 import requests
 import os
-from dotenv import load_dotenv
 from io import BytesIO
 from keep_alive import keep_alive
 keep_alive()
+
+import os
+token = os.environ.get('TOKEN')
 
 
 intents = nextcord.Intents.all()
@@ -90,5 +92,4 @@ async def on_ready():
     print(f"Logged in as {bot.user.name}")
 
 if __name__ == "__main__":
-    load_dotenv('.env')
-    bot.run(os.getenv('TOKEN'))
+    bot.run(token)
