@@ -89,4 +89,4 @@ async def on_ready():
     print(f"Logged in as {bot.user.name}")
 
 if __name__ == "__main__":
-    bot.run(os.environ.get('token')
+    bot.run(os.environ.get('token'))
