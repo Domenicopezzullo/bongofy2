@@ -6,7 +6,7 @@ from io import BytesIO
 import os
 from keep_alive import keep_alive
 keep_alive()
-mytoken = os.environ.get('token')
+mytoken = os.environ['token']
 
 intents = nextcord.Intents.all()
 bot = commands.Bot(intents=intents, command_prefix="!")
