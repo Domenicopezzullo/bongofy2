@@ -3,6 +3,7 @@ from nextcord.ext import commands
 from PIL import Image
 import requests
 import os
+from dotenv import load_dotenv
 from io import BytesIO
 from keep_alive import keep_alive
 keep_alive()
