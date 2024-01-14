@@ -3,4 +3,6 @@ pillow==10.2.0
 setuptools==69.0.2
 requests
 flask
+python-dotenv
+dotenv
 
