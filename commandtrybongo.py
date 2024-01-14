@@ -3,6 +3,8 @@ from nextcord.ext import commands
 from PIL import Image
 import requests
 from io import BytesIO
+from keep_alive import keep_alive
+keep_alive()
 
 intents = nextcord.Intents.all()
 bot = commands.Bot(intents=intents, command_prefix="!")
