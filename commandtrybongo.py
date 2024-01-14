@@ -6,6 +6,7 @@ from io import BytesIO
 import os
 from keep_alive import keep_alive
 keep_alive()
+mytoken = os.environ.get('token')
 
 intents = nextcord.Intents.all()
 bot = commands.Bot(intents=intents, command_prefix="!")
@@ -88,5 +89,4 @@ async def on_ready():
     print(f"Logged in as {bot.user.name}")
 
 if __name__ == "__main__":
-    token = os.environ.get('token')
-    bot.run(token)
+    bot.run(mytoken)
