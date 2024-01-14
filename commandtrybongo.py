@@ -90,6 +90,6 @@ async def process_image(ctx, image_content):
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot.user.name}")
-
-if __name__ == "__main__":
-    bot.run(token)
+   
+    
+bot.run(token)
