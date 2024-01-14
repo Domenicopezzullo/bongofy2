@@ -3,6 +3,7 @@ from nextcord.ext import commands
 from PIL import Image
 import requests
 from io import BytesIO
+import os
 from keep_alive import keep_alive
 keep_alive()
 
@@ -87,4 +88,5 @@ async def on_ready():
     print(f"Logged in as {bot.user.name}")
 
 if __name__ == "__main__":
-    bot.run('MTE3NTA4MDE1NTY5MDA0NTUzMQ.GktwE6.svD3x-z0ImRaMzyUul7oW_B_wjvsEtPYtrxwyM')
+    token = os.environ.get('token')
+    bot.run(token)
